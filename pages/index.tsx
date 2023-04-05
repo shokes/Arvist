@@ -81,7 +81,8 @@ const Home = () => {
           {isEditing ? 'Edit' : 'Add'}
         </button>
       </form>
-      {list.length ? (
+
+      {list && (
         <div>
           <List list={list} removeItem={removeItem} editItem={editItem} />
           <button
@@ -94,7 +95,7 @@ const Home = () => {
             Clear all todos
           </button>
         </div>
-      ) : null}
+      )}
     </section>
   );
 };
