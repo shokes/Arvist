@@ -13,7 +13,7 @@ const List = ({ list, removeItem, editItem }: ListProps) => {
       <div>
         <span className='font-bold'>Total todos: {list.length}</span>
       </div>
-      {list.map((li: any) => {
+      {list.map((li) => {
         const { id, title } = li;
         return (
           <div
