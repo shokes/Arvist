@@ -11,9 +11,9 @@ const List = ({ list, removeItem, editItem }: ListProps) => {
   return (
     <div>
       <div>
-        <span className='font-bold'>Total todos: {list.length}</span>
+        <span className='font-bold'>Total todos: {list?.length}</span>
       </div>
-      {list.map((li) => {
+      {list?.map((li) => {
         const { id, title } = li;
         return (
           <div
